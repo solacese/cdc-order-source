@@ -28,7 +28,8 @@ async function run() {
     process.exit(1);
   });
 
-  let orderSimulatorService = createOrderSimulator(mqttClient.publish, 500); // publish 2 orders/second
+  let orderSimulatorService = createOrderSimulator(mqttClient.publish, 1000); // publish 1 order/second
+  // let orderSimulatorService = createOrderSimulator(mqttClient.publish, 500); // publish 2 orders/second
   // let orderSimulatorService = createOrderSimulator(mqttClient.publish, 100); // publish 10 orders/second
   orderSimulatorService.start();
 
