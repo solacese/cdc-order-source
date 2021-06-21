@@ -1,0 +1,35 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": ["id", "type", "channel", "totalPrice", "timestamp"],
+  "properties": {
+    "id": {
+      "$id": "#/properties/id",
+      "type": "string",
+      "title": "The id schema"
+    },
+    "type": {
+      "$id": "#/properties/type",
+      "type": "string",
+      "title": "The type schema"
+    },
+    "channel": {
+      "$id": "#/properties/channel",
+      "type": "string",
+      "title": "The channel schema"
+    },
+    "totalPrice": {
+      "$id": "#/properties/totalPrice",
+      "type": "string",
+      "title": "The totalPrice schema"
+    },
+    "timestamp": {
+      "$id": "#/properties/timestamp",
+      "type": "string",
+      "title": "The timestamp schema"
+    }
+  }
+}
